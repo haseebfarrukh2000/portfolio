@@ -62,6 +62,18 @@ export const skills = [
     ],
   },
   {
+    category: "MLOps & AI Infrastructure",
+    icon: "🧠",
+    items: [
+      "AWS SageMaker",
+      "NVIDIA GPU Operator",
+      "Model Serving & Containerization",
+      "MLflow & Experiment Tracking",
+      "Kubernetes GPU Scheduling",
+      "Data & Model Versioning (DVC)",
+    ],
+  },
+  {
     category: "Automation & Scripting",
     icon: "⚡",
     items: ["Python", "Go", "Bash", "SQL", "Git", "UiPath RPA"],

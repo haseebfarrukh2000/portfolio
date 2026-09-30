@@ -1,5 +1,5 @@
 /**
- * Projects — 8 projects total (4 from resume, 4 from NextWork portfolio).
+ * Projects — 9 projects total (4 from resume, 4 from NextWork portfolio, 1 MLOps pipeline).
  * Edit this file to update the projects section. Update the matching HTML in index.html.
  */
 export const projects = [
@@ -80,6 +80,16 @@ export const projects = [
     stack: ["Terraform", "AWS S3", "IaC", "State Management", "HCL"],
     outcome:
       "Wrote Terraform configs to provision S3 buckets with versioning and lifecycle policies, managed state files, and applied plan/apply workflows for repeatable deployments.",
+    link: "",
+    linkLabel: "",
+  },
+  {
+    title: "MLOps: Automated Model Pipeline & Inference Endpoint",
+    problem:
+      "Automate model artifact validation, containerized packaging, and serverless endpoint deployment on AWS without manual handoffs.",
+    stack: ["AWS SageMaker", "Docker", "AWS Lambda", "ECR", "Python", "GitHub Actions", "CloudWatch"],
+    outcome:
+      "Engineered an automated CI/CD pipeline for ML model artifacts. Containerized inference workloads with Docker, deployed scalable serverless prediction endpoints, and configured automated health checks with CloudWatch monitoring.",
     link: "",
     linkLabel: "",
   },

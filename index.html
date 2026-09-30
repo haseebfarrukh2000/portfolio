@@ -218,6 +218,19 @@
             </ul>
           </div>
 
+          <!-- MLOps & AI Infrastructure -->
+          <div class="skill-card">
+            <div class="skill-card__header">
+              <span class="skill-card__icon">🧠</span>
+              <h3 class="skill-card__title">MLOps &amp; AI Infrastructure</h3>
+            </div>
+            <ul class="skill-card__list">
+              <li>AWS SageMaker</li><li>NVIDIA GPU Operator</li>
+              <li>Model Serving &amp; Containerization</li><li>MLflow</li>
+              <li>Kubernetes GPU Scheduling</li><li>DVC (Data Versioning)</li>
+            </ul>
+          </div>
+
           <!-- Automation & Scripting -->
           <div class="skill-card">
             <div class="skill-card__header">
@@ -299,135 +312,215 @@
     <!-- ========== PROJECTS ========== -->
     <section id="projects">
       <div class="container fade-in">
-        <p class="section-label">Projects</p>
-        <h2 class="section-title">What I've Built</h2>
+        <div class="projects__header">
+          <div>
+            <p class="section-label">Projects</p>
+            <div class="projects__title-row">
+              <h2 class="section-title">What I've Built</h2>
+              <span class="projects__badge"><span class="projects__badge-pulse"></span>9 Projects</span>
+            </div>
+          </div>
+          <div class="projects__controls">
+            <span class="projects__indicator" id="projects-counter" aria-live="polite">1–3 of 9</span>
+            <div class="projects__arrows">
+              <button id="proj-prev-btn" class="projects__arrow" aria-label="Previous projects" title="Previous">
+                <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+              </button>
+              <button id="proj-next-btn" class="projects__arrow" aria-label="Next projects" title="Next">
+                <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
         <hr class="section-divider" />
-        <div class="projects__grid">
 
-          <!-- Ajeek -->
-          <div class="project-card">
-            <h3 class="project-card__title">Ajeek: AWS Production Deployment</h3>
-            <p class="project-card__problem">
-              Deploy a production application with high availability, secure networking, and persistent storage on AWS.
-            </p>
-            <p class="project-card__label">Outcome</p>
-            <p class="project-card__outcome">
-              Launched on Amazon EKS with multi-tier VPC (public/private subnets), EFS for persistent storage, and ALB with SSL termination and path-based routing.
-            </p>
-            <div class="project-card__tags">
-              <span>AWS EKS</span><span>EC2</span><span>VPC</span><span>EFS</span><span>ALB</span><span>SSL/TLS</span><span>Terraform</span>
+        <div class="projects__carousel-container">
+          <div class="projects__track" id="projects-track" role="region" aria-label="Projects slider" tabindex="0">
+
+            <!-- 01: Ajeek -->
+            <div class="project-card" data-index="0">
+              <div class="project-card__top">
+                <span class="project-card__number">01</span>
+                <span class="project-card__category">Production Cloud</span>
+              </div>
+              <h3 class="project-card__title">Ajeek: AWS Production Deployment</h3>
+              <p class="project-card__problem">
+                Deploy a production application with high availability, secure networking, and persistent storage on AWS.
+              </p>
+              <p class="project-card__label">Outcome</p>
+              <p class="project-card__outcome">
+                Launched on Amazon EKS with multi-tier VPC (public/private subnets), EFS for persistent storage, and ALB with SSL termination and path-based routing.
+              </p>
+              <div class="project-card__tags">
+                <span>AWS EKS</span><span>EC2</span><span>VPC</span><span>EFS</span><span>ALB</span><span>SSL/TLS</span><span>Terraform</span>
+              </div>
+              <a href="https://ajeeknow.com" class="project-card__link" target="_blank" rel="noopener noreferrer">
+                ajeeknow.com
+                <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
             </div>
-            <a href="https://ajeeknow.com" class="project-card__link" target="_blank" rel="noopener noreferrer">
-              ajeeknow.com
-              <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-            </a>
-          </div>
 
-          <!-- NeuConnect & WaslHub -->
-          <div class="project-card">
-            <h3 class="project-card__title">NeuConnect &amp; WaslHub: Microservices Platform</h3>
-            <p class="project-card__problem">
-              Build a reliable Kubernetes platform for multiple microservices with persistent databases, secure ingress, and on-premises storage.
-            </p>
-            <p class="project-card__label">Outcome</p>
-            <p class="project-card__outcome">
-              Architected microservices environment with PostgreSQL StatefulSets, horizontal pod autoscaling, NGINX Ingress with TLS, and MinIO for on-prem object storage.
-            </p>
-            <div class="project-card__tags">
-              <span>Kubernetes</span><span>PostgreSQL</span><span>NGINX Ingress</span><span>TLS</span><span>HPA</span><span>MinIO</span>
+            <!-- 02: NeuConnect & WaslHub -->
+            <div class="project-card" data-index="1">
+              <div class="project-card__top">
+                <span class="project-card__number">02</span>
+                <span class="project-card__category">Microservices</span>
+              </div>
+              <h3 class="project-card__title">NeuConnect &amp; WaslHub: Microservices Platform</h3>
+              <p class="project-card__problem">
+                Build a reliable Kubernetes platform for multiple microservices with persistent databases, secure ingress, and on-premises storage.
+              </p>
+              <p class="project-card__label">Outcome</p>
+              <p class="project-card__outcome">
+                Architected microservices environment with PostgreSQL StatefulSets, horizontal pod autoscaling, NGINX Ingress with TLS, and MinIO for on-prem object storage.
+              </p>
+              <div class="project-card__tags">
+                <span>Kubernetes</span><span>PostgreSQL</span><span>NGINX Ingress</span><span>TLS</span><span>HPA</span><span>MinIO</span>
+              </div>
             </div>
-          </div>
 
-          <!-- CI/CD Pipeline -->
-          <div class="project-card">
-            <h3 class="project-card__title">CI/CD Pipeline: Jenkins + Argo CD</h3>
-            <p class="project-card__problem">
-              Eliminate manual deployment steps and reduce human errors across multiple environments.
-            </p>
-            <p class="project-card__label">Outcome</p>
-            <p class="project-card__outcome">
-              Automated 95%+ of deployment processes, reduced human deployment errors by 80%, and decreased production incidents by 50% across 3+ environments.
-            </p>
-            <div class="project-card__tags">
-              <span>Jenkins</span><span>Argo CD</span><span>GitOps</span><span>Docker</span><span>AWS ECR</span><span>Prometheus</span>
+            <!-- 03: CI/CD Pipeline -->
+            <div class="project-card" data-index="2">
+              <div class="project-card__top">
+                <span class="project-card__number">03</span>
+                <span class="project-card__category">GitOps Automation</span>
+              </div>
+              <h3 class="project-card__title">CI/CD Pipeline: Jenkins + Argo CD</h3>
+              <p class="project-card__problem">
+                Eliminate manual deployment steps and reduce human errors across multiple environments.
+              </p>
+              <p class="project-card__label">Outcome</p>
+              <p class="project-card__outcome">
+                Automated 95%+ of deployment processes, reduced human deployment errors by 80%, and decreased production incidents by 50% across 3+ environments.
+              </p>
+              <div class="project-card__tags">
+                <span>Jenkins</span><span>Argo CD</span><span>GitOps</span><span>Docker</span><span>AWS ECR</span><span>Prometheus</span>
+              </div>
             </div>
-          </div>
 
-          <!-- GPU Cluster -->
-          <div class="project-card">
-            <h3 class="project-card__title">Bare-Metal GPU Kubernetes Cluster</h3>
-            <p class="project-card__problem">
-              Run GPU-intensive AI workloads alongside standard services without resource contention on physical hardware.
-            </p>
-            <p class="project-card__label">Outcome</p>
-            <p class="project-card__outcome">
-              Built multi-node cluster with GPU scheduling isolation. Developed a Go utility that cut Docker image build times by 40% for AI workloads.
-            </p>
-            <div class="project-card__tags">
-              <span>Kubernetes</span><span>NVIDIA GPU</span><span>Taints/Tolerations</span><span>Docker</span><span>Go</span>
+            <!-- 04: GPU Cluster -->
+            <div class="project-card" data-index="3">
+              <div class="project-card__top">
+                <span class="project-card__number">04</span>
+                <span class="project-card__category">AI Infrastructure</span>
+              </div>
+              <h3 class="project-card__title">Bare-Metal GPU Kubernetes Cluster</h3>
+              <p class="project-card__problem">
+                Run GPU-intensive AI workloads alongside standard services without resource contention on physical hardware.
+              </p>
+              <p class="project-card__label">Outcome</p>
+              <p class="project-card__outcome">
+                Built multi-node cluster with GPU scheduling isolation. Developed a Go utility that cut Docker image build times by 40% for AI workloads.
+              </p>
+              <div class="project-card__tags">
+                <span>Kubernetes</span><span>NVIDIA GPU</span><span>Taints/Tolerations</span><span>Docker</span><span>Go</span>
+              </div>
             </div>
-          </div>
 
-          <!-- AWS DevOps CI/CD Pipeline (NextWork) -->
-          <div class="project-card">
-            <h3 class="project-card__title">AWS Native CI/CD Pipeline</h3>
-            <p class="project-card__problem">
-              Set up a full AWS-native deployment pipeline from source control through build, test, and deploy stages without third-party CI tools.
-            </p>
-            <p class="project-card__label">Outcome</p>
-            <p class="project-card__outcome">
-              Connected GitHub to AWS CodePipeline, configured CodeBuild for continuous integration, managed dependencies with CodeArtifact, and deployed to EC2 using CodeDeploy with automated rollback triggers.
-            </p>
-            <div class="project-card__tags">
-              <span>AWS CodePipeline</span><span>CodeBuild</span><span>CodeDeploy</span><span>CodeArtifact</span><span>EC2</span><span>GitHub</span>
+            <!-- 05: MLOps Automated Pipeline -->
+            <div class="project-card" data-index="4">
+              <div class="project-card__top">
+                <span class="project-card__number">05</span>
+                <span class="project-card__category">MLOps &amp; Cloud</span>
+              </div>
+              <h3 class="project-card__title">MLOps: Automated Model Pipeline &amp; Serverless Endpoint</h3>
+              <p class="project-card__problem">
+                Automate model artifact validation, containerized packaging, and serverless endpoint deployment on AWS without manual handoffs.
+              </p>
+              <p class="project-card__label">Outcome</p>
+              <p class="project-card__outcome">
+                Engineered an automated CI/CD pipeline for ML model artifacts. Containerized inference workloads with Docker, deployed scalable serverless prediction endpoints, and configured automated health checks with CloudWatch monitoring.
+              </p>
+              <div class="project-card__tags">
+                <span>AWS SageMaker</span><span>Docker</span><span>AWS Lambda</span><span>ECR</span><span>Python</span><span>GitHub Actions</span><span>CloudWatch</span>
+              </div>
             </div>
-          </div>
 
-          <!-- Kubernetes Deployment Series (NextWork) -->
-          <div class="project-card">
-            <h3 class="project-card__title">Kubernetes Cluster + Backend Deployment</h3>
-            <p class="project-card__problem">
-              Stand up a Kubernetes cluster from scratch, write manifests, configure deployments, and deploy a backend application end to end.
-            </p>
-            <p class="project-card__label">Outcome</p>
-            <p class="project-card__outcome">
-              Launched a cluster, created Deployments and Services from custom manifests, set up pod scaling, and deployed a backend application with health checks and rolling updates.
-            </p>
-            <div class="project-card__tags">
-              <span>Kubernetes</span><span>kubectl</span><span>Deployments</span><span>Services</span><span>Manifests</span><span>YAML</span>
+            <!-- 06: AWS DevOps CI/CD Pipeline (NextWork) -->
+            <div class="project-card" data-index="5">
+              <div class="project-card__top">
+                <span class="project-card__number">06</span>
+                <span class="project-card__category">AWS Native</span>
+              </div>
+              <h3 class="project-card__title">AWS Native CI/CD Pipeline</h3>
+              <p class="project-card__problem">
+                Set up a full AWS-native deployment pipeline from source control through build, test, and deploy stages without third-party CI tools.
+              </p>
+              <p class="project-card__label">Outcome</p>
+              <p class="project-card__outcome">
+                Connected GitHub to AWS CodePipeline, configured CodeBuild for continuous integration, managed dependencies with CodeArtifact, and deployed to EC2 using CodeDeploy with automated rollback triggers.
+              </p>
+              <div class="project-card__tags">
+                <span>AWS CodePipeline</span><span>CodeBuild</span><span>CodeDeploy</span><span>CodeArtifact</span><span>EC2</span><span>GitHub</span>
+              </div>
             </div>
-          </div>
 
-          <!-- Azure VNet Security (NextWork) -->
-          <div class="project-card">
-            <h3 class="project-card__title">Azure Virtual Network Security Lab</h3>
-            <p class="project-card__problem">
-              Design a multi-tier Azure VNet with proper network segmentation and enforce least-privilege traffic flow using NSGs.
-            </p>
-            <p class="project-card__label">Outcome</p>
-            <p class="project-card__outcome">
-              Built a three-tier virtual network (web, app, database), configured Network Security Groups for traffic isolation, and validated with Microsoft Defender for Cloud security assessments.
-            </p>
-            <div class="project-card__tags">
-              <span>Azure VNet</span><span>NSGs</span><span>Subnets</span><span>Defender for Cloud</span><span>Network Security</span>
+            <!-- 07: Kubernetes Deployment Series (NextWork) -->
+            <div class="project-card" data-index="6">
+              <div class="project-card__top">
+                <span class="project-card__number">07</span>
+                <span class="project-card__category">Kubernetes</span>
+              </div>
+              <h3 class="project-card__title">Kubernetes Cluster + Backend Deployment</h3>
+              <p class="project-card__problem">
+                Stand up a Kubernetes cluster from scratch, write manifests, configure deployments, and deploy a backend application end to end.
+              </p>
+              <p class="project-card__label">Outcome</p>
+              <p class="project-card__outcome">
+                Launched a cluster, created Deployments and Services from custom manifests, set up pod scaling, and deployed a backend application with health checks and rolling updates.
+              </p>
+              <div class="project-card__tags">
+                <span>Kubernetes</span><span>kubectl</span><span>Deployments</span><span>Services</span><span>Manifests</span><span>YAML</span>
+              </div>
             </div>
-          </div>
 
-          <!-- Terraform IaC (NextWork) -->
-          <div class="project-card">
-            <h3 class="project-card__title">Terraform IaC: S3 + Cloud Resources</h3>
-            <p class="project-card__problem">
-              Provision and manage cloud storage and infrastructure using Terraform instead of manual console operations.
-            </p>
-            <p class="project-card__label">Outcome</p>
-            <p class="project-card__outcome">
-              Wrote Terraform configs to provision S3 buckets with versioning and lifecycle policies, managed state files, and applied plan/apply workflows for repeatable deployments.
-            </p>
-            <div class="project-card__tags">
-              <span>Terraform</span><span>AWS S3</span><span>IaC</span><span>State Management</span><span>HCL</span>
+            <!-- 08: Azure VNet Security (NextWork) -->
+            <div class="project-card" data-index="7">
+              <div class="project-card__top">
+                <span class="project-card__number">08</span>
+                <span class="project-card__category">Azure Security</span>
+              </div>
+              <h3 class="project-card__title">Azure Virtual Network Security Lab</h3>
+              <p class="project-card__problem">
+                Design a multi-tier Azure VNet with proper network segmentation and enforce least-privilege traffic flow using NSGs.
+              </p>
+              <p class="project-card__label">Outcome</p>
+              <p class="project-card__outcome">
+                Built a three-tier virtual network (web, app, database), configured Network Security Groups for traffic isolation, and validated with Microsoft Defender for Cloud security assessments.
+              </p>
+              <div class="project-card__tags">
+                <span>Azure VNet</span><span>NSGs</span><span>Subnets</span><span>Defender for Cloud</span><span>Network Security</span>
+              </div>
             </div>
-          </div>
 
+            <!-- 09: Terraform IaC (NextWork) -->
+            <div class="project-card" data-index="8">
+              <div class="project-card__top">
+                <span class="project-card__number">09</span>
+                <span class="project-card__category">Infrastructure as Code</span>
+              </div>
+              <h3 class="project-card__title">Terraform IaC: S3 + Cloud Resources</h3>
+              <p class="project-card__problem">
+                Provision and manage cloud storage and infrastructure using Terraform instead of manual console operations.
+              </p>
+              <p class="project-card__label">Outcome</p>
+              <p class="project-card__outcome">
+                Wrote Terraform configs to provision S3 buckets with versioning and lifecycle policies, managed state files, and applied plan/apply workflows for repeatable deployments.
+              </p>
+              <div class="project-card__tags">
+                <span>Terraform</span><span>AWS S3</span><span>IaC</span><span>State Management</span><span>HCL</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="projects__footer">
+          <div class="projects__dots" id="projects-dots" role="tablist" aria-label="Projects slide indicator"></div>
+          <p class="projects__hint">
+            <svg viewBox="0 0 24 24"><path d="M7 16l-4-4m0 0l4-4m-4 4h18"/><path d="M17 8l4 4m0 0l-4 4"/></svg>
+            Swipe horizontally or use arrows to view all 9 projects
+          </p>
         </div>
       </div>
     </section>
