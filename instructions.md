@@ -193,25 +193,56 @@ jobs:
 
 ---
 
-## Post-Deploy Checklist
+## Deployment Status
 
-After deploying, update these placeholder values:
-
-- [ ] Replace `YOUR-DOMAIN` in `index.html` (canonical URL, OG URL)
-- [ ] Replace `YOUR-DOMAIN` in `public/robots.txt`
-- [ ] Replace `YOUR-DOMAIN` in `public/sitemap.xml`
-- [ ] Add your GitHub profile URL (search for `TODO` in `index.html`)
-- [ ] Update OG image URL to use absolute deployed URL
+- **GitHub Repository**: [https://github.com/haseebfarrukh2000/portfolio](https://github.com/haseebfarrukh2000/portfolio)
+- **Live URL**: [https://haseebfarrukh2000.github.io/portfolio/](https://haseebfarrukh2000.github.io/portfolio/)
+- **Deployment Method**: GitHub Pages (`gh-pages` branch)
 
 ---
 
-## TODOs & Gaps Found in Source Documents
+## Pushing Future Updates
+
+Whenever you make changes to the code, run these commands to update both the source repository and the live site:
+
+```bash
+# 1. Commit and push source changes to main branch
+git add .
+git commit -m "Update portfolio content"
+git push origin main
+
+# 2. Build and deploy latest version to GitHub Pages
+npm run build
+cd dist
+git init
+git checkout -b gh-pages
+git add -A
+git commit -m "deploy: update live site"
+git push -f https://github.com/haseebfarrukh2000/portfolio.git gh-pages
+rm -rf .git
+cd ..
+```
+
+---
+
+## Post-Deploy Checklist
+
+- [x] Canonical and Open Graph URLs set to `https://haseebfarrukh2000.github.io/portfolio/`
+- [x] Configured `public/robots.txt`
+- [x] Configured `public/sitemap.xml`
+- [x] Linked GitHub profile (`https://github.com/haseebfarrukh2000`)
+- [x] Configured absolute OG image URL for social media cards
+- [x] Created and verified `.nojekyll` configuration
+
+---
+
+## Notes on Source Documents
 
 | Item | Status | Notes |
 |------|--------|-------|
-| GitHub profile URL | **Missing** | Not in resume, LinkedIn, or cover letter. Search `TODO` in `index.html` to add it. |
+| GitHub profile URL | **Added** | Linked to `haseebfarrukh2000` |
 | Rayan Technologies dates | **Discrepancy** | Resume says Nov 2023, LinkedIn says Jan 2024. Used resume dates. |
 | Dr. Ziauddin Hospital role | **Added from LinkedIn** | Not in resume but present in LinkedIn profile. Included. |
 | RPA and Jenkins Bootcamp certs | **No links** | From LinkedIn only, no certificate URLs available. |
-| Profile images | **AI-generated** | Both source images are AI-generated headshots. Used image 1 (better lighting). |
-| Phone number | **Not displayed** | Available (03342708712) but not shown on the site for privacy. Add if desired. |
+| Profile images | **Active** | Profile image linked and optimized. |
+| Phone number | **Not displayed** | Available (03342708712) but kept hidden for privacy. |
