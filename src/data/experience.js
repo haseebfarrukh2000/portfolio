@@ -40,9 +40,11 @@ export const experience = [
     location: "Pakistan",
     period: "May 2023 – Dec 2023",
     bullets: [
-      "Developed internal healthcare software features using ASP.NET Core for hospital management systems.",
-      "Collaborated with clinical and technical stakeholders to deliver functional software within tight timelines.",
-      "Supported integration work between hospital systems, improving data flow across departments.",
+      "Engineered and maintained internal healthcare modules using ASP.NET Core for hospital management and patient records systems.",
+      "Automated build, release, and deployment workflows for .NET web apps, configuring IIS hosting and staging environments to eliminate manual release downtime.",
+      "Containerized backend application components with Docker to ensure consistent behavior across local development and production hospital servers.",
+      "Collaborated with clinical teams and IT stakeholders to roll out secure software updates and database fixes under tight operational schedules.",
+      "Improved data exchange and integration between hospital departments by building reliable REST APIs and optimizing backend queries.",
     ],
   },
 ];
