@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>M. Haseeb Farrukh | Cloud DevOps Engineer</title>
+  <meta name="description" content="Cloud DevOps Engineer specializing in AWS, Azure, Kubernetes, Terraform, and CI/CD automation. Building reliable, automated cloud infrastructure." />
+  <meta name="author" content="M. Haseeb Farrukh" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://haseebfarrukh2000.github.io/portfolio/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="M. Haseeb Farrukh | Cloud DevOps Engineer" />
+  <meta property="og:description" content="Cloud DevOps Engineer specializing in AWS, Azure, Kubernetes, Terraform, and CI/CD automation." />
+  <meta property="og:image" content="https://haseebfarrukh2000.github.io/portfolio/images/og-image.jpg" />
+  <meta property="og:url" content="https://haseebfarrukh2000.github.io/portfolio/" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="M. Haseeb Farrukh | Cloud DevOps Engineer" />
+  <meta name="twitter:description" content="Cloud DevOps Engineer specializing in AWS, Azure, Kubernetes, Terraform, and CI/CD automation." />
+  <meta name="twitter:image" content="https://haseebfarrukh2000.github.io/portfolio/images/og-image.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+
+  <!-- Theme script (runs before paint to prevent flash) -->
+  <script>
+    (function(){
+      var t = localStorage.getItem('portfolio-theme');
+      if (!t) t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <script type="module" crossorigin src="./assets/index-DmhhG2vp.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DZPXb2pV.css">
+</head>
+
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo" aria-label="Home">Haseeb<span>.</span></a>
+
+      <button id="nav-menu-btn" class="nav__menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+
+      <ul id="nav-links" class="nav__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Switch to light mode">☀️</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section id="hero" class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="hero__tag">DevOps · Cloud · Platform Engineering</span>
+          <h1 class="hero__name">M. Haseeb Farrukh</h1>
+          <p class="hero__headline">
+            I build and automate cloud infrastructure, CI/CD pipelines, and Kubernetes platforms on AWS and Azure. My focus is on making deployments reliable, fast, and repeatable so teams can ship with confidence.
+          </p>
+          <div class="hero__cta">
+            <a href="./resume/M-Haseeb-Farrukh-Cloud-DevOps-Resume.pdf" class="btn btn--primary" download>
+              <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Resume
+            </a>
+            <a href="https://www.linkedin.com/in/m-haseeb-farrukh3/" class="btn btn--outline" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/haseebfarrukh2000" class="btn btn--outline" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+            <a href="mailto:haseebfarrukh101@gmail.com" class="btn btn--outline">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Email
+            </a>
+          </div>
+        </div>
+        <div class="hero__photo-wrap">
+          <img
+            src="./images/image3.jpeg"
+            alt="M. Haseeb Farrukh, Cloud DevOps Engineer"
+            width="320"
+            height="320"
+            loading="eager"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section id="about" class="about">
+      <div class="container fade-in">
+        <p class="section-label">About</p>
+        <h2 class="section-title">Who I Am</h2>
+        <hr class="section-divider" />
+        <div class="about__text">
+          <p>
+            I'm a Cloud DevOps Engineer who automates cloud infrastructure, builds CI/CD pipelines, and streamlines software delivery on AWS and Azure. I design and deploy end-to-end pipelines using Jenkins, GitLab CI, and Argo CD, which has helped teams cut manual release overhead and ship faster with fewer errors.
+          </p>
+          <p>
+            My day-to-day involves containerizing workloads with Docker and Kubernetes, provisioning infrastructure with Terraform and Ansible, and writing Python and Bash scripts to get rid of repetitive ops tasks. Lately I've been deep into GitOps practices with Argo CD, managing container registries with Harbor, and keeping Kubernetes environments stable in production.
+          </p>
+          <p>
+            I care about the overlap between reliability and speed. I want to build systems that developers trust and operations teams don't have to babysit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section id="skills">
+      <div class="container fade-in">
+        <p class="section-label">Skills</p>
+        <h2 class="section-title">What I Work With</h2>
+        <hr class="section-divider" />
+        <div class="skills__grid">
+
+          <!-- Cloud & Infrastructure -->
+          <div class="skill-card">
+            <div class="skill-card__header">
+              <span class="skill-card__icon">☁️</span>
+              <h3 class="skill-card__title">Cloud &amp; Infrastructure</h3>
+            </div>
+            <ul class="skill-card__list">
+              <li>AWS EKS</li><li>EC2</li><li>RDS</li><li>S3</li><li>Lambda</li>
+              <li>VPC</li><li>ALB</li><li>CloudWatch</li><li>IAM</li>
+              <li>CloudFormation</li><li>EventBridge</li><li>Route 53</li>
+              <li>CodePipeline</li><li>CodeBuild</li><li>CodeDeploy</li>
+              <li>Microsoft Azure</li><li>Azure VNets</li><li>Azure Functions</li>
+            </ul>
+          </div>
+
+          <!-- Containers & Orchestration -->
+          <div class="skill-card">
+            <div class="skill-card__header">
+              <span class="skill-card__icon">🐳</span>
+              <h3 class="skill-card__title">Containers &amp; Orchestration</h3>
+            </div>
+            <ul class="skill-card__list">
+              <li>Kubernetes</li><li>StatefulSets</li><li>HPA</li><li>RBAC</li>
+              <li>Taints/Tolerations</li><li>Docker</li><li>Helm</li>
+              <li>Harbor</li><li>MinIO</li>
+            </ul>
+          </div>
+
+          <!-- Infrastructure as Code -->
+          <div class="skill-card">
+            <div class="skill-card__header">
+              <span class="skill-card__icon">📐</span>
+              <h3 class="skill-card__title">Infrastructure as Code</h3>
+            </div>
+            <ul class="skill-card__list">
+              <li>Terraform</li><li>AWS CloudFormation</li><li>Ansible</li>
+              <li>Kubernetes Manifests</li>
+            </ul>
+          </div>
+
+          <!-- CI/CD & GitOps -->
+          <div class="skill-card">
+            <div class="skill-card__header">
+              <span class="skill-card__icon">🔄</span>
+              <h3 class="skill-card__title">CI/CD &amp; GitOps</h3>
+            </div>
+            <ul class="skill-card__list">
+              <li>Argo CD</li><li>GitOps (App of Apps)</li><li>Jenkins</li>
+              <li>GitHub Actions</li><li>GitLab CI/CD</li><li>AWS CodePipeline</li>
+              <li>Blue-Green Deployments</li>
+            </ul>
+          </div>
+
+          <!-- Security & DevSecOps -->
+          <div class="skill-card">
+            <div class="skill-card__header">
+              <span class="skill-card__icon">🔒</span>
+              <h3 class="skill-card__title">Security &amp; DevSecOps</h3>
+            </div>
+            <ul class="skill-card__list">
+              <li>RBAC &amp; Network Policies</li><li>Secrets Management</li>
+              <li>Container Scanning (Trivy)</li><li>SonarQube</li>
+              <li>SSL/TLS Management</li><li>NSGs</li>
+            </ul>
+          </div>
+
+          <!-- Observability & Logging -->
+          <div class="skill-card">
+            <div class="skill-card__header">
+              <span class="skill-card__icon">📊</span>
+              <h3 class="skill-card__title">Observability &amp; Logging</h3>
+            </div>
+            <ul class="skill-card__list">
+              <li>Prometheus</li><li>Grafana</li><li>AlertManager</li>
+              <li>AWS CloudWatch</li><li>ELK Stack</li>
+            </ul>
+          </div>
+
+          <!-- MLOps & AI Infrastructure -->
+          <div class="skill-card">
+            <div class="skill-card__header">
+              <span class="skill-card__icon">🧠</span>
+              <h3 class="skill-card__title">MLOps &amp; AI Infrastructure</h3>
+            </div>
+            <ul class="skill-card__list">
+              <li>AWS SageMaker</li><li>NVIDIA GPU Operator</li>
+              <li>Model Serving &amp; Containerization</li><li>MLflow</li>
+              <li>Kubernetes GPU Scheduling</li><li>DVC (Data Versioning)</li>
+            </ul>
+          </div>
+
+          <!-- Automation & Scripting -->
+          <div class="skill-card">
+            <div class="skill-card__header">
+              <span class="skill-card__icon">⚡</span>
+              <h3 class="skill-card__title">Automation &amp; Scripting</h3>
+            </div>
+            <ul class="skill-card__list">
+              <li>Python</li><li>Go</li><li>Bash</li><li>SQL</li>
+              <li>Git</li><li>UiPath RPA</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EXPERIENCE ========== -->
+    <section id="experience" class="experience">
+      <div class="container fade-in">
+        <p class="section-label">Experience</p>
+        <h2 class="section-title">Where I've Worked</h2>
+        <hr class="section-divider" />
+        <div class="timeline">
+
+          <!-- QBS Co -->
+          <article class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__header">
+              <h3 class="timeline__title">Associate Cloud DevOps Engineer</h3>
+              <p class="timeline__meta">QBS Co · Pakistan · Nov 2025 – Present</p>
+            </div>
+            <ul class="timeline__bullets">
+              <li>Designed production Kubernetes manifests for microservices (frontend, backend, PostgreSQL) with resource limits, health probes, and rolling updates for zero-downtime deployments.</li>
+              <li>Engineered GitOps workflows using Argo CD with automated multi-environment sync (dev, staging, prod), which reduced deployment errors by 85% and brought deployment time down from 2 hours to 15 minutes.</li>
+              <li>Built a multi-node bare-metal Kubernetes cluster with NVIDIA GPU support, using taints/tolerations to isolate GPU-intensive AI workloads.</li>
+              <li>Provisioned AWS infrastructure via Terraform: VPC with public/private subnets, routing, Internet Gateway, NAT Gateway, EC2, and S3.</li>
+              <li>Developed a Go-based Docker image optimization utility that reduced AI workload image build times by 40%.</li>
+              <li>Implemented end-to-end CI/CD integrating AWS ECR, EventBridge, Lambda, and Jenkins with automated rollback on failures.</li>
+              <li>Deployed production Prometheus monitoring with custom scrape configs, ServiceMonitors, and alerting rules.</li>
+              <li>Automated PostgreSQL backup pipeline with scheduled snapshots to S3 for disaster recovery.</li>
+            </ul>
+          </article>
+
+          <!-- Rayan Technologies -->
+          <article class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__header">
+              <h3 class="timeline__title">Automation DevOps Engineer</h3>
+              <p class="timeline__meta">Rayan Technologies · Pakistan · Nov 2023 – Aug 2025</p>
+            </div>
+            <ul class="timeline__bullets">
+              <li>Automated backend workflows with UiPath, Python, and API integrations, which reduced manual task overhead by 70%.</li>
+              <li>Containerized automation components using Docker for consistent deployments across environments.</li>
+              <li>Integrated automated test suites into CI/CD pipelines via Jenkins, GitLab CI, and AWS CodePipeline.</li>
+              <li>Deployed and monitored test environments on AWS (EC2, Lambda, CloudWatch).</li>
+              <li>Developed Git-based version control workflows with branching, pull requests, and structured releases.</li>
+              <li>Designed reusable automation modules and configuration templates following IaC practices.</li>
+            </ul>
+          </article>
+
+          <!-- Dr. Ziauddin Hospital -->
+          <article class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__header">
+              <h3 class="timeline__title">Software Engineer</h3>
+              <p class="timeline__meta">Dr. Ziauddin Hospital · Pakistan · May 2023 – Dec 2023</p>
+            </div>
+            <ul class="timeline__bullets">
+              <li>Engineered and maintained internal healthcare modules using ASP.NET Core for hospital management and patient records systems.</li>
+              <li>Automated build, release, and deployment workflows for .NET web apps, configuring IIS hosting and staging environments to eliminate manual release downtime.</li>
+              <li>Containerized backend application components with Docker to ensure consistent behavior across local development and production hospital servers.</li>
+              <li>Collaborated with clinical teams and IT stakeholders to roll out secure software updates and database fixes under tight operational schedules.</li>
+              <li>Improved data exchange and integration between hospital departments by building reliable REST APIs and optimizing backend queries.</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section id="projects">
+      <div class="container fade-in">
+        <div class="projects__header">
+          <div>
+            <p class="section-label">Projects</p>
+            <div class="projects__title-row">
+              <h2 class="section-title">What I've Built</h2>
+              <span class="projects__badge"><span class="projects__badge-pulse"></span>9 Projects</span>
+            </div>
+          </div>
+          <div class="projects__controls">
+            <span class="projects__indicator" id="projects-counter" aria-live="polite">1–3 of 9</span>
+            <div class="projects__arrows">
+              <button id="proj-prev-btn" class="projects__arrow" aria-label="Previous projects" title="Previous">
+                <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+              </button>
+              <button id="proj-next-btn" class="projects__arrow" aria-label="Next projects" title="Next">
+                <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <hr class="section-divider" />
+
+        <div class="projects__carousel-container">
+          <div class="projects__track" id="projects-track" role="region" aria-label="Projects slider" tabindex="0">
+
+            <!-- 01: Ajeek -->
+            <div class="project-card" data-index="0">
+              <div class="project-card__top">
+                <span class="project-card__number">01</span>
+                <span class="project-card__category">Production Cloud</span>
+              </div>
+              <h3 class="project-card__title">Ajeek: AWS Production Deployment</h3>
+              <p class="project-card__problem">
+                Deploy a production application with high availability, secure networking, and persistent storage on AWS.
+              </p>
+              <p class="project-card__label">Outcome</p>
+              <p class="project-card__outcome">
+                Launched on Amazon EKS with multi-tier VPC (public/private subnets), EFS for persistent storage, and ALB with SSL termination and path-based routing.
+              </p>
+              <div class="project-card__tags">
+                <span>AWS EKS</span><span>EC2</span><span>VPC</span><span>EFS</span><span>ALB</span><span>SSL/TLS</span><span>Terraform</span>
+              </div>
+              <a href="https://ajeeknow.com" class="project-card__link" target="_blank" rel="noopener noreferrer">
+                ajeeknow.com
+                <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+            </div>
+
+            <!-- 02: NeuConnect & WaslHub -->
+            <div class="project-card" data-index="1">
+              <div class="project-card__top">
+                <span class="project-card__number">02</span>
+                <span class="project-card__category">Microservices</span>
+              </div>
+              <h3 class="project-card__title">NeuConnect &amp; WaslHub: Microservices Platform</h3>
+              <p class="project-card__problem">
+                Build a reliable Kubernetes platform for multiple microservices with persistent databases, secure ingress, and on-premises storage.
+              </p>
+              <p class="project-card__label">Outcome</p>
+              <p class="project-card__outcome">
+                Architected microservices environment with PostgreSQL StatefulSets, horizontal pod autoscaling, NGINX Ingress with TLS, and MinIO for on-prem object storage.
+              </p>
+              <div class="project-card__tags">
+                <span>Kubernetes</span><span>PostgreSQL</span><span>NGINX Ingress</span><span>TLS</span><span>HPA</span><span>MinIO</span>
+              </div>
+            </div>
+
+            <!-- 03: CI/CD Pipeline -->
+            <div class="project-card" data-index="2">
+              <div class="project-card__top">
+                <span class="project-card__number">03</span>
+                <span class="project-card__category">GitOps Automation</span>
+              </div>
+              <h3 class="project-card__title">CI/CD Pipeline: Jenkins + Argo CD</h3>
+              <p class="project-card__problem">
+                Eliminate manual deployment steps and reduce human errors across multiple environments.
+              </p>
+              <p class="project-card__label">Outcome</p>
+              <p class="project-card__outcome">
+                Automated 95%+ of deployment processes, reduced human deployment errors by 80%, and decreased production incidents by 50% across 3+ environments.
+              </p>
+              <div class="project-card__tags">
+                <span>Jenkins</span><span>Argo CD</span><span>GitOps</span><span>Docker</span><span>AWS ECR</span><span>Prometheus</span>
+              </div>
+            </div>
+
+            <!-- 04: GPU Cluster -->
+            <div class="project-card" data-index="3">
+              <div class="project-card__top">
+                <span class="project-card__number">04</span>
+                <span class="project-card__category">AI Infrastructure</span>
+              </div>
+              <h3 class="project-card__title">Bare-Metal GPU Kubernetes Cluster</h3>
+              <p class="project-card__problem">
+                Run GPU-intensive AI workloads alongside standard services without resource contention on physical hardware.
+              </p>
+              <p class="project-card__label">Outcome</p>
+              <p class="project-card__outcome">
+                Built multi-node cluster with GPU scheduling isolation. Developed a Go utility that cut Docker image build times by 40% for AI workloads.
+              </p>
+              <div class="project-card__tags">
+                <span>Kubernetes</span><span>NVIDIA GPU</span><span>Taints/Tolerations</span><span>Docker</span><span>Go</span>
+              </div>
+            </div>
+
+            <!-- 05: MLOps Automated Pipeline -->
+            <div class="project-card" data-index="4">
+              <div class="project-card__top">
+                <span class="project-card__number">05</span>
+                <span class="project-card__category">MLOps &amp; Cloud</span>
+              </div>
+              <h3 class="project-card__title">MLOps: Automated Model Pipeline &amp; Serverless Endpoint</h3>
+              <p class="project-card__problem">
+                Automate model artifact validation, containerized packaging, and serverless endpoint deployment on AWS without manual handoffs.
+              </p>
+              <p class="project-card__label">Outcome</p>
+              <p class="project-card__outcome">
+                Engineered an automated CI/CD pipeline for ML model artifacts. Containerized inference workloads with Docker, deployed scalable serverless prediction endpoints, and configured automated health checks with CloudWatch monitoring.
+              </p>
+              <div class="project-card__tags">
+                <span>AWS SageMaker</span><span>Docker</span><span>AWS Lambda</span><span>ECR</span><span>Python</span><span>GitHub Actions</span><span>CloudWatch</span>
+              </div>
+            </div>
+
+            <!-- 06: AWS DevOps CI/CD Pipeline (NextWork) -->
+            <div class="project-card" data-index="5">
+              <div class="project-card__top">
+                <span class="project-card__number">06</span>
+                <span class="project-card__category">AWS Native</span>
+              </div>
+              <h3 class="project-card__title">AWS Native CI/CD Pipeline</h3>
+              <p class="project-card__problem">
+                Set up a full AWS-native deployment pipeline from source control through build, test, and deploy stages without third-party CI tools.
+              </p>
+              <p class="project-card__label">Outcome</p>
+              <p class="project-card__outcome">
+                Connected GitHub to AWS CodePipeline, configured CodeBuild for continuous integration, managed dependencies with CodeArtifact, and deployed to EC2 using CodeDeploy with automated rollback triggers.
+              </p>
+              <div class="project-card__tags">
+                <span>AWS CodePipeline</span><span>CodeBuild</span><span>CodeDeploy</span><span>CodeArtifact</span><span>EC2</span><span>GitHub</span>
+              </div>
+            </div>
+
+            <!-- 07: Kubernetes Deployment Series (NextWork) -->
+            <div class="project-card" data-index="6">
+              <div class="project-card__top">
+                <span class="project-card__number">07</span>
+                <span class="project-card__category">Kubernetes</span>
+              </div>
+              <h3 class="project-card__title">Kubernetes Cluster + Backend Deployment</h3>
+              <p class="project-card__problem">
+                Stand up a Kubernetes cluster from scratch, write manifests, configure deployments, and deploy a backend application end to end.
+              </p>
+              <p class="project-card__label">Outcome</p>
+              <p class="project-card__outcome">
+                Launched a cluster, created Deployments and Services from custom manifests, set up pod scaling, and deployed a backend application with health checks and rolling updates.
+              </p>
+              <div class="project-card__tags">
+                <span>Kubernetes</span><span>kubectl</span><span>Deployments</span><span>Services</span><span>Manifests</span><span>YAML</span>
+              </div>
+            </div>
+
+            <!-- 08: Azure VNet Security (NextWork) -->
+            <div class="project-card" data-index="7">
+              <div class="project-card__top">
+                <span class="project-card__number">08</span>
+                <span class="project-card__category">Azure Security</span>
+              </div>
+              <h3 class="project-card__title">Azure Virtual Network Security Lab</h3>
+              <p class="project-card__problem">
+                Design a multi-tier Azure VNet with proper network segmentation and enforce least-privilege traffic flow using NSGs.
+              </p>
+              <p class="project-card__label">Outcome</p>
+              <p class="project-card__outcome">
+                Built a three-tier virtual network (web, app, database), configured Network Security Groups for traffic isolation, and validated with Microsoft Defender for Cloud security assessments.
+              </p>
+              <div class="project-card__tags">
+                <span>Azure VNet</span><span>NSGs</span><span>Subnets</span><span>Defender for Cloud</span><span>Network Security</span>
+              </div>
+            </div>
+
+            <!-- 09: Terraform IaC (NextWork) -->
+            <div class="project-card" data-index="8">
+              <div class="project-card__top">
+                <span class="project-card__number">09</span>
+                <span class="project-card__category">Infrastructure as Code</span>
+              </div>
+              <h3 class="project-card__title">Terraform IaC: S3 + Cloud Resources</h3>
+              <p class="project-card__problem">
+                Provision and manage cloud storage and infrastructure using Terraform instead of manual console operations.
+              </p>
+              <p class="project-card__label">Outcome</p>
+              <p class="project-card__outcome">
+                Wrote Terraform configs to provision S3 buckets with versioning and lifecycle policies, managed state files, and applied plan/apply workflows for repeatable deployments.
+              </p>
+              <div class="project-card__tags">
+                <span>Terraform</span><span>AWS S3</span><span>IaC</span><span>State Management</span><span>HCL</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="projects__footer">
+          <div class="projects__dots" id="projects-dots" role="tablist" aria-label="Projects slide indicator"></div>
+          <p class="projects__hint">
+            <svg viewBox="0 0 24 24"><path d="M7 16l-4-4m0 0l4-4m-4 4h18"/><path d="M17 8l4 4m0 0l-4 4"/></svg>
+            Swipe horizontally or use arrows to view all 9 projects
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CERTIFICATIONS & EDUCATION ========== -->
+    <section id="certifications" class="certs">
+      <div class="container fade-in">
+        <p class="section-label">Credentials</p>
+        <h2 class="section-title">Certifications &amp; Education</h2>
+        <hr class="section-divider" />
+        <div class="certs__columns">
+
+          <!-- Certifications -->
+          <div>
+            <h3 class="certs__subtitle">Certifications</h3>
+            <ul class="cert-list">
+              <li class="cert-item">
+                <span class="cert-item__name">Certified Kubernetes Administrator (CKA)</span>
+                <span class="cert-item__issuer">KodeKloud</span>
+                <a href="https://learn.kodekloud.com/certificate/b37d5647-e3b5-480a-ade1-a0891a8b6f3b" class="cert-item__link" target="_blank" rel="noopener noreferrer">View Certificate ↗</a>
+              </li>
+              <li class="cert-item">
+                <span class="cert-item__name">Docker Certified Associate Exam Course</span>
+                <span class="cert-item__issuer">KodeKloud</span>
+                <a href="https://learn.kodekloud.com/certificate/063af563-a5de-4c2c-b22e-0b0168f76f2b" class="cert-item__link" target="_blank" rel="noopener noreferrer">View Certificate ↗</a>
+              </li>
+              <li class="cert-item">
+                <span class="cert-item__name">Jenkins: Building CI/CD Pipeline for Scalable Web Applications</span>
+                <span class="cert-item__issuer">KodeKloud</span>
+                <a href="https://learn.kodekloud.com/certificate/6fc8dc5b-c00b-45ef-8fb4-3008bf9489de" class="cert-item__link" target="_blank" rel="noopener noreferrer">View Certificate ↗</a>
+              </li>
+              <li class="cert-item">
+                <span class="cert-item__name">AWS For Beginners with Hands-On Labs</span>
+                <span class="cert-item__issuer">KodeKloud</span>
+                <a href="https://learn.kodekloud.com/certificate/57d4bd78-48cf-4ecd-9efa-e65100f9349e" class="cert-item__link" target="_blank" rel="noopener noreferrer">View Certificate ↗</a>
+              </li>
+              <li class="cert-item">
+                <span class="cert-item__name">The Complete Jenkins DevOps CI/CD Pipeline Bootcamp</span>
+                <span class="cert-item__issuer">KodeKloud</span>
+              </li>
+              <li class="cert-item">
+                <span class="cert-item__name">Robotic Process Automation (RPA) Developer Advanced</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Education -->
+          <div>
+            <h3 class="certs__subtitle">Education</h3>
+            <div class="edu-card">
+              <p class="edu-card__degree">BS Computer Science</p>
+              <p class="edu-card__school">Muhammad Ali Jinnah University</p>
+              <p class="edu-card__meta">Feb 2019 – Feb 2023 · CGPA: 3.3</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact">
+      <div class="container fade-in">
+        <p class="section-label">Contact</p>
+        <h2 class="section-title">Get in Touch</h2>
+        <hr class="section-divider" />
+        <div class="contact__inner">
+          <p class="contact__text">
+            I'm open to Cloud DevOps, SRE, and Platform Engineering roles. If you'd like to work together or just want to chat, drop me a line.
+          </p>
+          <div class="contact__links">
+            <a href="mailto:haseebfarrukh101@gmail.com" class="contact__link">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              haseebfarrukh101@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/m-haseeb-farrukh3/" class="contact__link" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              linkedin.com/in/m-haseeb-farrukh3
+            </a>
+            <a href="https://github.com/haseebfarrukh2000" class="contact__link" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              github.com/haseebfarrukh2000
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">&copy; 2026 M. Haseeb Farrukh</p>
+    </div>
+  </footer>
+
+  <!-- Main Script -->
+
+</body>
+</html>
